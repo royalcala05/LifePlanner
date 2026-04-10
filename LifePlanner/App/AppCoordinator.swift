@@ -38,4 +38,8 @@ final class AppCoordinator {
         )
         self.menuBarController = MenuBarController(viewModel: reminderDraftViewModel)
     }
+
+    var debugStatusDescription: String {
+        menuBarController.debugStatusDescription
+    }
 }

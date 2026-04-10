@@ -19,11 +19,24 @@ final class MenuBarController: NSObject {
         )
 
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "bell.badge", accessibilityDescription: "LifePlanner")
-            button.imagePosition = .imageOnly
+            let image = NSImage(systemSymbolName: "bell.badge", accessibilityDescription: "LifePlanner")
+            image?.isTemplate = true
+            button.image = image
+            button.title = " LP"
+            button.imagePosition = .imageLeading
             button.action = #selector(togglePopover)
             button.target = self
+            button.toolTip = "LifePlanner"
         }
+    }
+
+    var debugStatusDescription: String {
+        guard let button = statusItem.button else {
+            return "Menu bar item creation failed: NSStatusItem exists, but its button is nil."
+        }
+
+        let frame = NSStringFromRect(button.frame)
+        return "Menu bar item created successfully. Title='\(button.title)' frame=\(frame)"
     }
 
     @objc
