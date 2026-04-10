@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'LifePlannerTests' in project 'LifePlanner'
+➜ Explicit dependency on target 'LifePlanner' in project 'LifePlanner'
+Target 'LifePlanner' in project 'LifePlanner' (no dependencies)

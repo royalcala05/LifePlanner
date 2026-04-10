@@ -1,0 +1,16 @@
+/Users/silalcala/Documents/LifePlanner/LifePlanner/App/AppCoordinator.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Persistence/AppStorage.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Reminders/Components/CategoryBadgeView.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Domain/ClassificationResult.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Persistence/JSONFileStore.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/LifePlannerApp.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/App/MenuBarController.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Reminders/ReminderDraftViewModel.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Reminders/PopoverContentView.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Domain/ReminderCategory.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Classifier/ReminderClassifier.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Domain/ReminderItem.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Persistence/StoragePaths.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Classifier/TrainingStore.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Classifier/Tokenizer.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/Classifier/WeightedKeywordModel.swift

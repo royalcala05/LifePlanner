@@ -1,0 +1,49 @@
+{
+  "keywordWeights" : {
+    "classes" : {
+      "assignment" : 3,
+      "class" : 3,
+      "exam" : 5,
+      "lecture" : 3.5,
+      "meeting" : 2.5,
+      "quiz" : 4
+    },
+    "girlfriend" : {
+      "date" : 4,
+      "dinner" : 2.5,
+      "flowers" : 3,
+      "girlfriend" : 5,
+      "movie" : 1.5
+    },
+    "groceries" : {
+      "costco" : 4,
+      "eggs" : 2,
+      "groceries" : 5,
+      "milk" : 2.5,
+      "store" : 2
+    },
+    "gym" : {
+      "bench" : 5,
+      "cardio" : 3,
+      "gym" : 5,
+      "lifting" : 5,
+      "workout" : 4
+    },
+    "lul" : {
+      "leadership" : 2.5,
+      "lul" : 5,
+      "org" : 2
+    },
+    "shpe" : {
+      "conference" : 2.5,
+      "networking" : 2,
+      "shpe" : 5,
+      "society" : 1.5
+    },
+    "social" : {
+      "friends" : 3.5,
+      "hangout" : 3.5,
+      "party" : 4
+    }
+  }
+}
