@@ -16,6 +16,16 @@
     "swift-dependencies" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/AppCoordinator.swiftdeps",
     "swiftmodule" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/AppCoordinator~partial.swiftmodule"
   },
+  "/Users/silalcala/Documents/LifePlanner/LifePlanner/App/DailyEmailSummaryScheduler.swift" : {
+    "const-values" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.swiftconstvalues",
+    "dependencies" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.d",
+    "diagnostics" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.dia",
+    "index-unit-output-path" : "/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.o",
+    "llvm-bc" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.bc",
+    "object" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.o",
+    "swift-dependencies" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler.swiftdeps",
+    "swiftmodule" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/DailyEmailSummaryScheduler~partial.swiftmodule"
+  },
   "/Users/silalcala/Documents/LifePlanner/LifePlanner/App/MenuBarController.swift" : {
     "const-values" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/MenuBarController.swiftconstvalues",
     "dependencies" : "/Users/silalcala/Documents/LifePlanner/.derivedData/Build/Intermediates.noindex/LifePlanner.build/Debug/LifePlanner.build/Objects-normal/arm64/MenuBarController.d",

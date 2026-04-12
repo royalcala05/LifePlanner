@@ -9,6 +9,7 @@ final class AppCoordinator {
 
     private let menuBarController: MenuBarController
     private let notificationScheduler: NotificationScheduler
+    private let dailyEmailSummaryScheduler: DailyEmailSummaryScheduler
 
     init(
         storage: AppStorage? = nil,
@@ -45,6 +46,11 @@ final class AppCoordinator {
         self.menuBarController = MenuBarController(viewModel: plannerViewModel)
         self.notificationScheduler = NotificationScheduler()
         self.notificationScheduler.startCalendarCheckNotifications()
+        self.dailyEmailSummaryScheduler = DailyEmailSummaryScheduler(
+            storage: resolvedStorage,
+            recipientEmail: "roycs21100@gmail.com"
+        )
+        self.dailyEmailSummaryScheduler.start()
     }
 
     var debugStatusDescription: String {

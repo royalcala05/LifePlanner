@@ -2,6 +2,7 @@
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Persistence/AppStorage.swift
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Reminders/Components/CategoryBadgeView.swift
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Domain/ClassificationResult.swift
+/Users/silalcala/Documents/LifePlanner/LifePlanner/App/DailyEmailSummaryScheduler.swift
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Planner/DateParser.swift
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Features/Planner/DayColumnView.swift
 /Users/silalcala/Documents/LifePlanner/LifePlanner/Persistence/JSONFileStore.swift
