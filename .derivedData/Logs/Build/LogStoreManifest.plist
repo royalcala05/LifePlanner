@@ -48,7 +48,7 @@
 			<key>uniqueIdentifier</key>
 			<string>70C8349B-9369-489B-BC95-1969ACDD7E15</string>
 		</dict>
-		<key>937F8C5E-78D5-4821-94E2-641D39C79BBE</key>
+		<key>9AF78DD9-D09F-4788-AB6C-8520DB79DA82</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -57,13 +57,13 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>937F8C5E-78D5-4821-94E2-641D39C79BBE.xcactivitylog</string>
+			<string>9AF78DD9-D09F-4788-AB6C-8520DB79DA82.xcactivitylog</string>
 			<key>hasPrimaryLog</key>
 			<true/>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
-				<string>W</string>
+				<string>S</string>
 				<key>totalNumberOfAnalyzerIssues</key>
 				<integer>0</integer>
 				<key>totalNumberOfErrors</key>
@@ -71,7 +71,7 @@
 				<key>totalNumberOfTestFailures</key>
 				<integer>0</integer>
 				<key>totalNumberOfWarnings</key>
-				<integer>1</integer>
+				<integer>0</integer>
 			</dict>
 			<key>schemeIdentifier-containerName</key>
 			<string>LifePlanner project</string>
@@ -82,13 +82,13 @@
 			<key>signature</key>
 			<string>Building project LifePlanner for testing with scheme LifePlanner</string>
 			<key>timeStartedRecording</key>
-			<real>797711053.60591304</real>
+			<real>797712028.49564397</real>
 			<key>timeStoppedRecording</key>
-			<real>797711065.18132699</real>
+			<real>797712035.27618599</real>
 			<key>title</key>
 			<string>Building project LifePlanner for testing with scheme LifePlanner</string>
 			<key>uniqueIdentifier</key>
-			<string>937F8C5E-78D5-4821-94E2-641D39C79BBE</string>
+			<string>9AF78DD9-D09F-4788-AB6C-8520DB79DA82</string>
 		</dict>
 	</dict>
 </dict>

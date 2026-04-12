@@ -55,6 +55,16 @@ struct SmartInputBarView: View {
                             }
                         }
                     }
+
+                    Section("Remove Custom Tag") {
+                        ForEach(viewModel.customTags, id: \.self) { tag in
+                            Button(role: .destructive) {
+                                viewModel.removeCustomTag(tag)
+                            } label: {
+                                Label(tag, systemImage: "trash")
+                            }
+                        }
+                    }
                 }
             } label: {
                 Label("Choose Tag", systemImage: "tag")
@@ -67,7 +77,7 @@ struct SmartInputBarView: View {
             Button {
                 isAddingTag = true
             } label: {
-                Label("Add Tag", systemImage: "tag.badge.plus")
+                Image(systemName: "plus")
                     .labelStyle(.iconOnly)
                     .font(.system(size: 17, weight: .semibold))
             }

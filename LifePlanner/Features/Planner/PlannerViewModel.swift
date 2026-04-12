@@ -132,6 +132,35 @@ final class PlannerViewModel: ObservableObject {
         selectCustomTag(trimmed)
     }
 
+    func removeCustomTag(_ tag: String) {
+        guard customTags.contains(tag) else {
+            return
+        }
+
+        let updatedTags = customTags.filter { $0 != tag }
+        let updatedReminders = reminders.map { reminder in
+            var updatedReminder = reminder
+            if updatedReminder.customTagName == tag {
+                updatedReminder.customTagName = nil
+            }
+            return updatedReminder
+        }
+
+        do {
+            try storage.saveCustomTags(updatedTags)
+            try storage.saveReminders(updatedReminders)
+            customTags = updatedTags
+            reminders = updatedReminders
+            if selectedCustomTagName == tag {
+                selectedCustomTagName = nil
+            }
+            latestSaveMessage = "Removed tag"
+        } catch {
+            latestSaveMessage = "Failed to remove tag"
+            NSLog("Failed to remove custom tag: \(error.localizedDescription)")
+        }
+    }
+
     func submitDraft() {
         let trimmed = draftText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard trimmed.isEmpty == false else {
