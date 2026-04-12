@@ -6,16 +6,16 @@ final class MenuBarController: NSObject {
     private let statusItem: NSStatusItem
     private let popover: NSPopover
 
-    init(viewModel: ReminderDraftViewModel) {
+    init(viewModel: PlannerViewModel) {
         self.statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
         self.popover = NSPopover()
         super.init()
 
         popover.behavior = .transient
         popover.animates = true
-        popover.contentSize = NSSize(width: 360, height: 280)
+        popover.contentSize = NSSize(width: 1280, height: 780)
         popover.contentViewController = NSHostingController(
-            rootView: PopoverContentView(viewModel: viewModel)
+            rootView: PlannerRootView(viewModel: viewModel)
         )
 
         if let button = statusItem.button {

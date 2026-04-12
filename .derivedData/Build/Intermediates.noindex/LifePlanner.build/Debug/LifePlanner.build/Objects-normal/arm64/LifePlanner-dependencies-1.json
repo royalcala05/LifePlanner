@@ -437,6 +437,13 @@
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
+    "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UserNotifications.framework\/Modules\/module.modulemap",
+    "clangModulePath" : "\/Users\/silalcala\/Documents\/LifePlanner\/.derivedData\/ModuleCache.noindex\/UserNotifications-5BC5ES2IPHNSNTTQP0E3E3CPB.pcm",
+    "isBridgingHeaderDependency" : false,
+    "isFramework" : false,
+    "moduleName" : "UserNotifications"
+  },
+  {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/xpc.modulemap",
     "clangModulePath" : "\/Users\/silalcala\/Documents\/LifePlanner\/.derivedData\/ModuleCache.noindex\/XPC-DW3ZIB62JPN5TH7S71MGL7ZPY.pcm",
     "isBridgingHeaderDependency" : false,

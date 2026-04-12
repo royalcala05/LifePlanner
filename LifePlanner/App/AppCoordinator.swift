@@ -5,8 +5,10 @@ final class AppCoordinator {
     let storage: AppStorage
     let classifier: ReminderClassifier
     let reminderDraftViewModel: ReminderDraftViewModel
+    let plannerViewModel: PlannerViewModel
 
     private let menuBarController: MenuBarController
+    private let notificationScheduler: NotificationScheduler
 
     init(
         storage: AppStorage? = nil,
@@ -36,7 +38,13 @@ final class AppCoordinator {
             classifier: resolvedClassifier,
             storage: resolvedStorage
         )
-        self.menuBarController = MenuBarController(viewModel: reminderDraftViewModel)
+        self.plannerViewModel = PlannerViewModel(
+            classifier: resolvedClassifier,
+            storage: resolvedStorage
+        )
+        self.menuBarController = MenuBarController(viewModel: plannerViewModel)
+        self.notificationScheduler = NotificationScheduler()
+        self.notificationScheduler.startCalendarCheckNotifications()
     }
 
     var debugStatusDescription: String {

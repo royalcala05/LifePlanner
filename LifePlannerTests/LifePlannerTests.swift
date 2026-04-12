@@ -74,4 +74,36 @@ final class LifePlannerTests: XCTestCase {
         XCTAssertEqual(try store.loadReminders(), [reminder])
         XCTAssertEqual(try store.loadTrainingStore(), trainingStore)
     }
+
+    func testDeleteReminderRemovesPersistedItem() throws {
+        let tempDirectory = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString, isDirectory: true)
+        let store = JSONFileStore(paths: StoragePaths(baseDirectory: tempDirectory))
+        let reminder = ReminderItem(text: "Buy milk", predictedCategory: .groceries, finalCategory: .groceries)
+
+        try store.appendReminder(reminder)
+        try store.deleteReminder(id: reminder.id)
+
+        XCTAssertEqual(try store.loadReminders(), [])
+    }
+
+    func testDateParserHandlesTomorrow() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let now = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 4, day: 10)))
+
+        let parsed = try XCTUnwrap(DateParser.targetDate(from: "bench press tomorrow", now: now, calendar: calendar))
+
+        XCTAssertEqual(calendar.component(.day, from: parsed), 11)
+    }
+
+    func testDateParserHandlesWeekday() throws {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let friday = try XCTUnwrap(calendar.date(from: DateComponents(year: 2026, month: 4, day: 10)))
+
+        let parsed = try XCTUnwrap(DateParser.targetDate(from: "calc exam monday", now: friday, calendar: calendar))
+
+        XCTAssertEqual(calendar.component(.weekday, from: parsed), 2)
+        XCTAssertEqual(calendar.component(.day, from: parsed), 13)
+    }
 }

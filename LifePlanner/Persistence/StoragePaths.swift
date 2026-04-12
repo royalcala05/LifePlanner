@@ -11,6 +11,10 @@ struct StoragePaths {
         baseDirectory.appendingPathComponent("training-data.json")
     }
 
+    var customTagsURL: URL {
+        baseDirectory.appendingPathComponent("custom-tags.json")
+    }
+
     static var `default`: StoragePaths {
         let appSupport = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first
             ?? FileManager.default.temporaryDirectory

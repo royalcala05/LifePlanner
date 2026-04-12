@@ -2,18 +2,27 @@ import SwiftUI
 
 struct CategoryBadgeView: View {
     let category: ReminderCategory?
+    var customTagName: String?
     let confidenceLabel: String
 
     private var backgroundStyle: AnyShapeStyle {
-        AnyShapeStyle(category?.accentColor ?? .gray)
+        AnyShapeStyle(customTagName == nil ? (category?.accentColor ?? .gray) : .indigo)
+    }
+
+    private var title: String {
+        customTagName ?? category?.displayName ?? "No strong category yet"
+    }
+
+    private var symbolName: String {
+        customTagName == nil ? (category?.symbolName ?? "questionmark.circle") : "tag.fill"
     }
 
     var body: some View {
         HStack(spacing: 8) {
-            Image(systemName: category?.symbolName ?? "questionmark.circle")
+            Image(systemName: symbolName)
                 .imageScale(.small)
 
-            Text(category?.displayName ?? "No strong category yet")
+            Text(title)
                 .fontWeight(.semibold)
 
             Text(confidenceLabel)

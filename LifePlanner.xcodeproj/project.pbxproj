@@ -25,6 +25,16 @@
 		A00000000000000000000010 /* StoragePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000030 /* StoragePaths.swift */; };
 		A00000000000000000000011 /* SeedTrainingData.json in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000031 /* SeedTrainingData.json */; };
 		A00000000000000000000012 /* LifePlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000032 /* LifePlannerTests.swift */; };
+		A00000000000000000000013 /* DateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000035 /* DateParser.swift */; };
+		A00000000000000000000014 /* PlannerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000036 /* PlannerViewModel.swift */; };
+		A00000000000000000000015 /* PlannerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000037 /* PlannerRootView.swift */; };
+		A00000000000000000000016 /* SmartInputBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000038 /* SmartInputBarView.swift */; };
+		A00000000000000000000017 /* WeeklyCalendarGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000039 /* WeeklyCalendarGridView.swift */; };
+		A00000000000000000000018 /* DayColumnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000003A /* DayColumnView.swift */; };
+		A00000000000000000000019 /* ReminderCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000003B /* ReminderCardView.swift */; };
+		A0000000000000000000001A /* MiscellaneousSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000003C /* MiscellaneousSidebarView.swift */; };
+		A0000000000000000000001B /* ReminderEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000003D /* ReminderEditorView.swift */; };
+		A0000000000000000000001C /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000003E /* NotificationScheduler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +69,16 @@
 		A00000000000000000000032 /* LifePlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifePlannerTests.swift; sourceTree = "<group>"; };
 		A00000000000000000000033 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A00000000000000000000034 /* LifePlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifePlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000035 /* DateParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateParser.swift; sourceTree = "<group>"; };
+		A00000000000000000000036 /* PlannerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerViewModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000037 /* PlannerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlannerRootView.swift; sourceTree = "<group>"; };
+		A00000000000000000000038 /* SmartInputBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartInputBarView.swift; sourceTree = "<group>"; };
+		A00000000000000000000039 /* WeeklyCalendarGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCalendarGridView.swift; sourceTree = "<group>"; };
+		A0000000000000000000003A /* DayColumnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayColumnView.swift; sourceTree = "<group>"; };
+		A0000000000000000000003B /* ReminderCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCardView.swift; sourceTree = "<group>"; };
+		A0000000000000000000003C /* MiscellaneousSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscellaneousSidebarView.swift; sourceTree = "<group>"; };
+		A0000000000000000000003D /* ReminderEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderEditorView.swift; sourceTree = "<group>"; };
+		A0000000000000000000003E /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,7 @@
 			children = (
 				A00000000000000000000022 /* AppCoordinator.swift */,
 				A00000000000000000000023 /* MenuBarController.swift */,
+				A0000000000000000000003E /* NotificationScheduler.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -152,6 +173,7 @@
 		A00000000000000000000058 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A0000000000000000000005D /* Planner */,
 				A0000000000000000000005B /* Reminders */,
 			);
 			path = Features;
@@ -192,6 +214,22 @@
 				A0000000000000000000002D /* CategoryBadgeView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		A0000000000000000000005D /* Planner */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000035 /* DateParser.swift */,
+				A00000000000000000000036 /* PlannerViewModel.swift */,
+				A00000000000000000000037 /* PlannerRootView.swift */,
+				A00000000000000000000038 /* SmartInputBarView.swift */,
+				A00000000000000000000039 /* WeeklyCalendarGridView.swift */,
+				A0000000000000000000003A /* DayColumnView.swift */,
+				A0000000000000000000003B /* ReminderCardView.swift */,
+				A0000000000000000000003C /* MiscellaneousSidebarView.swift */,
+				A0000000000000000000003D /* ReminderEditorView.swift */,
+			);
+			path = Planner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,17 +328,27 @@
 				A0000000000000000000000E /* AppStorage.swift in Sources */,
 				A0000000000000000000000D /* CategoryBadgeView.swift in Sources */,
 				A00000000000000000000008 /* ClassificationResult.swift in Sources */,
+				A00000000000000000000013 /* DateParser.swift in Sources */,
+				A00000000000000000000018 /* DayColumnView.swift in Sources */,
 				A0000000000000000000000F /* JSONFileStore.swift in Sources */,
 				A00000000000000000000001 /* LifePlannerApp.swift in Sources */,
 				A00000000000000000000003 /* MenuBarController.swift in Sources */,
+				A0000000000000000000001A /* MiscellaneousSidebarView.swift in Sources */,
+				A0000000000000000000001C /* NotificationScheduler.swift in Sources */,
 				A0000000000000000000000B /* ReminderDraftViewModel.swift in Sources */,
+				A00000000000000000000019 /* ReminderCardView.swift in Sources */,
+				A0000000000000000000001B /* ReminderEditorView.swift in Sources */,
+				A00000000000000000000015 /* PlannerRootView.swift in Sources */,
+				A00000000000000000000014 /* PlannerViewModel.swift in Sources */,
 				A0000000000000000000000C /* PopoverContentView.swift in Sources */,
 				A00000000000000000000009 /* ReminderCategory.swift in Sources */,
 				A00000000000000000000004 /* ReminderClassifier.swift in Sources */,
 				A0000000000000000000000A /* ReminderItem.swift in Sources */,
+				A00000000000000000000016 /* SmartInputBarView.swift in Sources */,
 				A00000000000000000000010 /* StoragePaths.swift in Sources */,
 				A00000000000000000000006 /* TrainingStore.swift in Sources */,
 				A00000000000000000000005 /* Tokenizer.swift in Sources */,
+				A00000000000000000000017 /* WeeklyCalendarGridView.swift in Sources */,
 				A00000000000000000000007 /* WeightedKeywordModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

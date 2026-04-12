@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import AppKit;
 @import ObjectiveC;
+@import UserNotifications;
 #endif
 
 #endif
@@ -312,6 +313,15 @@ SWIFT_CLASS("_TtC11LifePlanner22LifePlannerAppDelegate")
 
 SWIFT_CLASS("_TtC11LifePlanner17MenuBarController")
 @interface MenuBarController : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class UNUserNotificationCenter;
+@class UNNotification;
+SWIFT_CLASS("_TtC11LifePlanner21NotificationScheduler")
+@interface NotificationScheduler : NSObject <UNUserNotificationCenterDelegate>
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
